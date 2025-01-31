@@ -1,0 +1,48 @@
+.home-page {
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+background-color: #11101f;
+color: #e0e0e0;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.animated-text {
+    font-size: 5vw; /* Responsive text size */
+    font-weight: bolder;
+    color: #f1f1f1;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Hides text that overflows */
+    border-right: 4px solid #f1f1f1; /* Blinking cursor effect */
+    animation: typing 5s steps(28, end), blink-caret 0.75s step-end infinite;
+    animation-iteration-count: infinite; /* Ensures infinite repetition */
+    animation-delay: 0s; /* Ensures immediate start */
+    transform: translateY(-10vh);
+  }
+  
+  /* Typing effect */
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    70% {
+      width: 100%;
+    }
+    100% {
+      width: 101%;
+    }
+  }
+  
+  /* Blinking cursor effect */
+  @keyframes blink-caret {
+    0%, 90% {
+      border-color: #f1f1f1; 
+    }
+    91%, 100% {
+      border-color: transparent; 
+    }
+  }

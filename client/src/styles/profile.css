@@ -1,0 +1,115 @@
+.bg-dark {
+    background-color: #1b1c30 !important; 
+}    
+
+.btn-custom {
+background-color: #d3d3d3 !important;
+color: black !important;
+border: none !important;
+border-radius: 5px !important;
+padding: 4px 20px !important; /* Decrease vertical padding and increase horizontal padding */
+width: 70% !important; /* Increase button width to 70% of the container */
+height: 35px !important; /* Set a specific height */
+transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.btn-custom:hover {
+background-color: white !important;
+transform: scale(1.05) !important;
+}
+  
+  
+/* Custom light grey text color */
+.text-light-grey {
+color: #d3d3d3 !important; 
+}
+
+.bg-theme {
+    background-color: #26273b !important; 
+}
+    
+
+.card {
+border-radius: 15px;
+border: none;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+overflow: hidden;
+background-color: #26273b !important; /* Light background for contrast with shadow */
+}
+
+
+.card-header {
+    font-weight: bold;
+    font-size: xx-large;
+    border-bottom: none;
+}
+
+.bg-secondary {
+    background-color: #272839 !important;
+}
+
+.events-placeholder {
+    color: white !important;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column; /* Fill items vertically first */
+    flex-wrap: wrap; /* Wrap items to the next column when vertical space is filled */
+    max-height: 100%; /* Prevent items from exceeding the container height */
+    width: max-content; /* Adjusts width to fit the longest item in the column */
+}
+
+.list-group-item {
+    flex: 0 0 auto; /* Prevent items from stretching */
+    margin-bottom: 4px; /* Adds some space between items vertically */
+    width: max-content; /* Each item will take the width of its content */
+}
+/* Main Styles for Card Body */
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 200px; /* Fixed height for the container */
+    overflow-x: auto; /* Enables horizontal scrolling when content overflows horizontally */
+    overflow-y: hidden; /* Prevents vertical scrolling */
+    gap: 0 40px; /* Adds 40px horizontal gap between columns */
+    position: relative; /* Ensure positioning context for the scrollbar */
+
+    /* Customize scrollbar for Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #555 #f0f0f0;
+    scrollbar-gutter: stable; /* Ensures scrollbar does not cause layout shift */
+}
+
+.card-body::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.card-body::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+}
+.removeEventButton {
+    border: none;
+    background : white;
+    color : #272839;
+    width: 1.5rem;
+    height: 1.5rem;
+    display : inline-flex;
+    justify-content : center;
+    align-items : center;
+    margin-right : 15px;
+    padding-bottom: 3px;
+}
+.removeEventButton.delete {
+    background: #ffa9a3;
+}
+.profile-container {
+    height: 90vh;
+}
+
+

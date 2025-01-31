@@ -1,0 +1,95 @@
+.login-page {
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+background-color: #212237;
+color: #e0e0e0;
+overflow: hidden;
+}
+
+.login-page .container {
+animation: fadeInUp 1.2s ease-in-out;
+min-height: 100vh;
+min-width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.login-page .card {
+background-color: #1e1e1e;
+border: none;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+transition: transform 0.3s ease;
+}
+
+.login-page h2 {
+color: #f0f0f0;
+font-weight: bold;
+}
+
+.login-page .form-control {
+background-color: #333;
+border: 1px solid #444;
+color: #e0e0e0;
+transition: box-shadow 0.3s ease;
+resize: none;
+}
+
+.login-page .form-control::placeholder {
+color: #888; 
+opacity: 1; 
+}
+
+.login-page .form-control:focus {
+box-shadow: 0 0 8px rgba(70, 130, 180, 0.8);
+border-color: #4682b4;
+outline: none;
+}
+
+.login-page .btn-primary {
+background: linear-gradient(135deg, #8a2be2, #ff69b4, #00bfff); /* Gradient colors: purple, pink, blue */
+background-size: 200% 200%; /* Enlarges the gradient for a more dynamic look */
+color: #fff;
+font-weight: bold;
+border: none;
+border-radius: 8px;
+transition: background-position 0.5s ease, transform 0.3s ease; /* Smooth transition effects */
+}
+
+.login-page .btn-primary:hover {
+background-position: right center; /* Moves the gradient on hover */
+transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+
+.login-page .btn-secondary {
+background-color: #6c757d;
+border: none;
+color: #fff;
+font-weight: bold;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-page .btn-secondary:hover {
+background-color: #5a6268;
+transform: scale(1.05);
+}
+
+.login-page .text-danger {
+color: #ff4c4c;
+font-weight: bolder;
+}
+
+@keyframes fadeInUp {
+0% {
+    opacity: 0;
+    transform: translateY(20px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
